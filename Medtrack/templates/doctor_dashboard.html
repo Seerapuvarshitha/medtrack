@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Dashboard | MedTrack</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0fdfc;
+    }
+
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #264653;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2a9d8f;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f7f5;
+    }
+
+    footer {
+      background-color: #2a9d8f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Doctor Dashboard - MedTrack</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="appointments.html">Appointments</a>
+  <a href="patients.html">Patients</a>
+  <a href="logout.html">Logout</a>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Today's Appointments</h2>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Patient Name</th>
+        <th>Reason</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>09:00 AM</td>
+        <td>Ravi Kumar</td>
+        <td>General Checkup</td>
+        <td>Confirmed</td>
+      </tr>
+      <tr>
+        <td>11:30 AM</td>
+        <td>Anjali Singh</td>
+        <td>Follow-up</td>
+        <td>Pending</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Patient List</h2>
+    <table>
+      <tr>
+        <th>Patient Name</th>
+        <th>Age</th>
+        <th>Last Visit</th>
+        <th>Condition</th>
+      </tr>
+      <tr>
+        <td>Rahul Mehta</td>
+        <td>42</td>
+        <td>2025-06-15</td>
+        <td>Diabetes</td>
+      </tr>
+      <tr>
+        <td>Priya Sharma</td>
+        <td>30</td>
+        <td>2025-06-20</td>
+        <td>Blood Pressure</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 MedTrack. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Dashboard | MedTrack</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0fdfc;
+    }
+
+    header {
+      background-color: #2a9d8f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #264653;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2a9d8f;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0f7f5;
+    }
+
+    footer {
+      background-color: #2a9d8f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Patient Dashboard - MedTrack</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="appointments.html">My Appointments</a>
+  <a href="medications.html">Medications</a>
+  <a href="logout.html">Logout</a>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Upcoming Appointments</h2>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Doctor</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>2025-07-05</td>
+        <td>10:00 AM</td>
+        <td>Dr. Meena Sharma</td>
+        <td>Confirmed</td>
+      </tr>
+      <tr>
+        <td>2025-07-15</td>
+        <td>03:30 PM</td>
+        <td>Dr. Arjun Rao</td>
+        <td>Pending</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>My Medications</h2>
+    <table>
+      <tr>
+        <th>Medicine</th>
+        <th>Dosage</th>
+        <th>Frequency</th>
+        <th>Start Date</th>
+      </tr>
+      <tr>
+        <td>Metformin</td>
+        <td>500 mg</td>
+        <td>Twice a day</td>
+        <td>2025-06-20</td>
+      </tr>
+      <tr>
+        <td>Amlodipine</td>
+        <td>5 mg</td>
+        <td>Once a day</td>
+        <td>2025-06-10</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 MedTrack. All rights reserved.
+</footer>
+
+</body>
+</html>
