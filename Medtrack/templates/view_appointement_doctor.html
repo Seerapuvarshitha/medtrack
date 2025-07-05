@@ -1,0 +1,28 @@
+<!-- view_appointment_doctor.html -->
+{% extends "base.html" %}
+{% block title %}Doctor Appointment Details{% endblock %}
+
+{% block content %}
+  <div class="container" style="max-width: 600px; margin: auto; padding: 20px;">
+    {% if appointment %}
+      <h2 style="margin-bottom: 20px;">Doctor View – Appointment #{{ appointment['id'] }}</h2>
+      
+      <ul style="list-style-type: none; padding: 0;">
+        <li><strong>Patient:</strong> {{ appointment['patient'] }}</li>
+        <li><strong>Date:</strong> {{ appointment['date'] }}</li>
+        <li><strong>Time:</strong> {{ appointment['time'] }}</li>
+      </ul>
+    {% else %}
+      <p>Appointment not found.</p>
+    {% endif %}
+
+    <div class="btn-group" style="margin-top: 20px;">
+      <a class="btn" href="{{ url_for('doctor_dashboard') }}" style="margin-right: 10px; text-decoration: none;">
+        Back to Dashboard
+      </a>
+      <a class="btn outline" href="{{ url_for('logout') }}" style="text-decoration: none;">
+        Logout
+      </a>
+    </div>
+  </div>
+{% endblock %}
