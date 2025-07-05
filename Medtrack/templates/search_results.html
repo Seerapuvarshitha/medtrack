@@ -1,0 +1,28 @@
+<!-- search_results.html -->
+{% extends "base.html" %}
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+  <div class="container" style="max-width: 600px; margin: auto; padding: 20px; background-color: #f4f4f4; border-radius: 10px;">
+    <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">Search Results</h2>
+
+    {% if results %}
+      <ul style="list-style-type: none; padding: 0;">
+        {% for item in results %}
+          <li style="background-color: #ffffff; padding: 10px 15px; margin-bottom: 10px; border-radius: 5px; border-left: 4px solid #3498db;">
+            <strong>{{ item.name }}</strong> &ndash; <span style="color: #555;">{{ item.email }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="text-align: center; color: #7f8c8d;">No results found.</p>
+    {% endif %}
+
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="{{ url_for(session.role + '_dashboard') }}"
+         style="text-decoration: none; color: #3498db; border: 1px solid #3498db; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        Back to Dashboard
+      </a>
+    </div>
+  </div>
+{% endblock %}
